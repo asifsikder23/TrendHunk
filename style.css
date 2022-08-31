@@ -1,0 +1,61 @@
+.tbl-header {
+    background-color: rgb(12, 49, 82);
+    color: hsl(0, 0%, 28%);
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.tbl-header {
+    padding-top: 50px;
+    background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s infinite linear;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+
+    60% {
+        background-position: 500px;
+    }
+
+    100% {
+        background-position: 1000px;
+    }
+}
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .footer-menu a {
+    margin: 0 20px;
+    color: #ada9a9;
+    text-decoration: none;
+  }
+  .footer-menu a:hover{
+    color: white;
+  }
+  .footer-social-icon {
+    padding-bottom: 25px;
+  }
+  .footer-social-icon a {
+    margin: 0 10px;
+    padding: 6px 9px;
+    border-radius: 50%;
+    background: rgb(49, 47, 47);
+    font-size: 20px;
+    color: #b3b3b3;
+  }
+  .footer-social-icon a:hover{
+    background-color: white;
+    color: #161616;
+  }
