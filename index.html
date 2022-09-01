@@ -39,10 +39,12 @@
                     </ul>
                   </li>
                 </ul>
-                <div class="d-flex">
-                  <input id="search-field" class="form-control me-2 px-5 text-center" type="search" placeholder="Search" aria-label="Search">
-                  <button id="btn-search" class="btn btn-outline-success" type="submit">Search</button>
-                </div>
+                <section>
+                  <div class="d-flex">
+                    <input id="search-field" class="form-control me-2 text-center" type="search" placeholder="Search" aria-label="Search">
+                    <button id="btn-search" class="btn btn-outline-success" type="submit">Search</button>
+                  </div>
+                </section>
               </div>
             </div>
           </nav>
@@ -76,7 +78,6 @@
                 </button>
               </div>
         </section>
-
         <section class="text-center">
             <h1 class="tbl-header" scope="col"> Available Phone brand </h1>
             <hr class="w-50 text-light mx-auto">
@@ -92,10 +93,20 @@
                 </span> Please try a new search.
               </h1>
             </div>
+            <div id="view-all" class="text-center mt-4 d-none">
+              <button id="btn-show-all" type="button" class="btn btn-danger w-50">View All &nbsp;<i class="fas fa-angle-double-right"></i></button>
+            </div>
+        </section>
+
+        <section id="loader" class="d-none">
+          <div style="height: 400px;" class="d-flex justify-content-center align-items-center  mt-4">
+            <div class="spinner-border text-warning" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
         </section>
     </main>
     
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
