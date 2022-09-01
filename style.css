@@ -9,6 +9,7 @@
 }
 
 .tbl-header {
+  font-family: 'Gill Sans MT';
     padding-top: 50px;
     background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
     -webkit-background-clip: text;
@@ -22,7 +23,7 @@
     }
 
     60% {
-        background-position: 500px;
+        background-position: 600px;
     }
 
     100% {
@@ -58,4 +59,7 @@
   .footer-social-icon a:hover{
     background-color: white;
     color: #161616;
+  }
+  .vdo{
+    height: 803px;
   }

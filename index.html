@@ -11,46 +11,36 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
-<body class="bg-dark">
-    <header>
+<body class="bg-black">
+    <header class="sticky-top shadow-lg">
         <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img class="img-fluid" src="images/Trend-Hunter-Logo.png" width="150px" alt=""></a>
+              <a class="navbar-brand" href="#"><img class="img-fluid" src="images/Trend-Hunter-Logo.png" width="120px" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#about">About</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contact us</a>
                   </li>
                 </ul>
                 <section>
                   <div class="d-flex">
                     <input id="search-field" class="form-control me-2 text-center" type="search" placeholder="Search" aria-label="Search">
-                    <button id="btn-search" class="btn btn-outline-success" type="submit">Search</button>
+                    <button id="btn-search" class="btn btn-outline-success" type="submit"> <a class="text-decoration-none text-white" href="#phone-list">Search</a></button>
                   </div>
                 </section>
               </div>
             </div>
           </nav>
     </header>
-
-
     <main>
         <section>
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -59,7 +49,7 @@
                     <img src="images/iphone banner.jpg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
-                    <img src="images/Mi banner.jpg.png" class="d-block w-100" alt="...">
+                    <img src="/images/Mi banner.jpg.png"  class="d-block w-100 h-75" alt="...">
                   </div>
                   <div class="carousel-item">
                     <img src="images/oppo banner.png" class="d-block w-100" alt="...">
@@ -82,7 +72,7 @@
             <h1 class="tbl-header" scope="col"> Available Phone brand </h1>
             <hr class="w-50 text-light mx-auto">
         </section>
-        <section class="container">
+        <section class="container" id="phone-list">
             <div id="phone-container" class="cards row row-cols-1 row-cols-md-3 g-4 ">
                 
             </div>
@@ -105,6 +95,28 @@
             </div>
           </div>
         </section>
+        <section>
+          <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="phoneModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="phoneModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div id="phone-details" class="modal-body bg-dark">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        
     </main>
     
 
@@ -112,8 +124,8 @@
 
     <script src="js/trend-hunter.js"></script>
 </body>
-<footer>
-  <div class="bg-black text-white text-center mt-5 p-3">
+<footer id="footer" class="bottom-0">
+  <div class="bg-dark text-white text-center mt-5 p-3">
     <div class="footer-social-icon pt-5">
       <a href=""><i class="fab fa-linkedin"></i></a>
       <a href=""><i class="fab fa-twitter-square"></i></a>
@@ -127,7 +139,7 @@
       <a href="">Privacy Settings</a>
     </div>
   </div>
-  <div class="bg-success text-white text-center p-3 pb-1">
+  <div class="bg-black text-white text-center p-3 pb-1">
     <p>
       @Asif Ullah Sikder, All Rights Reserved
     </p>
