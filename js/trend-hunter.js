@@ -7,6 +7,8 @@ const loadPhones = async(searchText, dataLimit) => {
 const displayPhones = (phones, dataLimit) =>{
     const phonesContainer = document.getElementById('phone-container');
     phonesContainer.textContent = '';
+
+    const viewAll = document.getElementById('view-all')
     // display 20 phones only
     
     if(dataLimit && phones.length > 10){
