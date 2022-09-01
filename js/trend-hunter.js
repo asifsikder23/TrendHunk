@@ -92,8 +92,8 @@ const displayPhoneDetails = phone =>{
   const phoneDetails = document.getElementById('phone-details');
   phoneDetails.innerHTML = `
   <h1 class =" text-center text-bg-dark">MainFeatures</h1>
-  <div class="container d-flex align-items-center gap-2">
-  <img src = "${phone.image}"> <br> </img>;
+  <div class="container d-block d-md-flex align-items-center gap-2">
+  <img class="ms-4 ms-md-0 ms-lg-0" src = "${phone.image}"> <br> </img>;
   <ul class="list-group">
   <li class="list-group-item"><span class= "fw-bold">Release Date: </span>${phone.releaseDate ? phone.releaseDate : 'No Release Date found'}</li>
   <li class="list-group-item bg-white-50"><span class= "fw-bold">ChipSet: </span>${phone.mainFeatures.chipSet}</li>
