@@ -39,10 +39,10 @@
                     </ul>
                   </li>
                 </ul>
-                <form class="d-flex" role="search">
+                <div class="d-flex">
                   <input id="search-field" class="form-control me-2 px-5 text-center" type="search" placeholder="Search" aria-label="Search">
                   <button id="btn-search" class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                </div>
               </div>
             </div>
           </nav>
@@ -84,7 +84,14 @@
         <section class="container">
             <div id="phone-container" class="cards row row-cols-1 row-cols-md-3 g-4 ">
                 
-              </div>
+            </div>
+            <div id="not-found-message" class="mt-4 text-center d-none">
+              <h1 class="text-white-50 ">
+                <span class="text-danger">
+                  No phone Found !!!
+                </span> Please try a new search.
+              </h1>
+            </div>
         </section>
     </main>
     
@@ -96,20 +103,20 @@
 </body>
 <footer>
   <div class="bg-black text-white text-center mt-5 p-3">
+    <div class="footer-social-icon pt-5">
+      <a href=""><i class="fab fa-linkedin"></i></a>
+      <a href=""><i class="fab fa-twitter-square"></i></a>
+      <a href=""><i class="fab fa-instagram-square"></i></a>
+      <a href=""><i class="fab fa-facebook"></i></a>
+    </div>
     <div class="footer-menu">
       <a href="">Contact Us</a>
       <a href="">Terms of Dervices</a>
       <a href="">Privecy Policy</a>
       <a href="">Privacy Settings</a>
     </div>
-    <div class="footer-social-icon">
-      <a href=""><i class="fab fa-linkedin"></i></a>
-      <a href=""><i class="fab fa-twitter-square"></i></a>
-      <a href=""><i class="fab fa-instagram-square"></i></a>
-      <a href=""><i class="fab fa-facebook"></i></a>
-    </div>
   </div>
-  <div class="bg-success text-white text-center p-3 mx-auto d-flex align-items-center justify-content-center">
+  <div class="bg-success text-white text-center p-3 pb-1">
     <p>
       @Asif Ullah Sikder, All Rights Reserved
     </p>

@@ -7,11 +7,21 @@ const loadPhones = async(searchText) => {
 const displayPhones = phones =>{
     const phonesContainer = document.getElementById('phone-container');
     phonesContainer.textContent = '';
+    // display 20 phones only
+    phones = phones.slice(0,15);
+    // display no phones found
+    const noPhone = document.getElementById('not-found-message');
+    if(phones.length === 0){
+      noPhone.classList.remove('d-none');
+    }
+    else{
+      noPhone.classList.add('d-none')
+    }
     phones.forEach(phone => {
         const phoneDiv = document.createElement('div');
         phoneDiv.classList.add('col');
         phoneDiv.innerHTML =`
-        <div class="col">
+        <div class="col mt-4">
                   <div class="card">
                     <img src="${phone.image}" class="card-img-top p-5" alt="...">
                     <div class="card-body">
@@ -23,7 +33,7 @@ const displayPhones = phones =>{
                 </div>
         `;
         phonesContainer.appendChild(phoneDiv);
-    });
+    })
 }
 
 document.getElementById('btn-search').addEventListener('click',function (){
@@ -32,4 +42,4 @@ document.getElementById('btn-search').addEventListener('click',function (){
   loadPhones(searchText);
 })
 
-loadPhones('');
+// loadPhones();
